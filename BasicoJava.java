@@ -9,7 +9,5 @@ public class BasicoJava
         int b = leitor.nextInt();
         int x = a+b;
         System.out.println("X = " +x);
-    }
-
-    
+    }   
 }
