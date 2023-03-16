@@ -8,7 +8,5 @@ public class CirculoArea
         double raio = entrada.nextDouble();
         double resul = 3.14159 * (raio*raio);
         System.out.println(String.format("A=%.4f", resul));
-    }
-
-    
+    }   
 }
