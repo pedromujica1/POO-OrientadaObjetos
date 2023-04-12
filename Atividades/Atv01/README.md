@@ -11,14 +11,14 @@ Para a resolução da atividade os seguintes passos foram realizados.
 * Mostrar a soma de arg1 e arg2 com o metódo print()
 
 ```
-//Classe impressão de texto: PrimeiroProgamaJava.java
+//Classe SomaArgs: Soma de valores 
 /* IFPR - Campus Cascavel
 Disciplina: Programação Orientada à Objetos
 Professor: Nelson Bellincanta */ 
 
 import java.util.Scanner; //Importa a classe Scanner.
 
-public class ex1 { //Declara a classe ex1.
+public class SomaArgs { //Declara a classe SomaArgs.
 
   //Declara método main, que dá início ao programa.
   public static void main(String[] args) {
@@ -36,6 +36,6 @@ public class ex1 { //Declara a classe ex1.
     System.out.print("O resultado da soma é: "); //Imprime a mensagem.
     System.out.println(arg1+arg2); //Imprime a soma de arg1 e arg2.
   }//Fim do método main.
-} //Fim da classe ex1.
+} //Fim da classe SomaArgs.
 
 ```
