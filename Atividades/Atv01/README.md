@@ -1,8 +1,8 @@
-## Notebook Atividade 01 - Atv01
+# Notebook Atividade 01 - Atv01
 
 Objetivo: Criar uma classe em Java que seja capaz de apresentar a soma de todos os argumentos inteiros ou reais recebidos. Argumentos inválidos devem ser desconsiderados sem provocar a exibição de erros ou exceções.
 
-# Para a resolução da atividade os seguintes passos foram realizados:
+## Para a resolução da atividade os seguintes passos foram realizados:
 
 * Importar a classe Scanner da biblioteca java.util.
 * Usar o objeto dados que utiliza a classe Scanner para ler os dados.
