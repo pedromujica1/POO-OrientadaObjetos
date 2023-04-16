@@ -1,4 +1,4 @@
-## Notebook Atividade 01 - Atv01
+## Notebook Atividade 02 - Atv02
 
 # Atividade
 Objetivo: Criar uma classe em Java que realize cada uma das seguintes tarefas: 
@@ -9,35 +9,37 @@ Objetivo: Criar uma classe em Java que realize cada uma das seguintes tarefas:
 Para a resolução da atividade os seguintes passos foram realizados.
 
 * Importar a classe Scanner da biblioteca java.util.
-* Usar o objeto dados que utiliza a classe Scanner para ler os dados.
-* Usar o metódo nextInt() da classe Scanner para ler as variáveis arg1 e arg2 como inteiros.
+* Declarar a variável "c" como inteira e atribuir algum valor a ela.
+* Usar o objeto dados que utiliza a classe Scanner para ler o input.
+* Para mostrar a mensagem "Informe um inteiro" é usado o metódo print para ficar na mesma linha.
+* Usar o metódo nextInt() da classe Scanner para ler a variável "b" como inteira.
 * Fechar o objeto leitor com o metódo .close()
-* Mostrar a soma de arg1 e arg2 com o metódo print()
+* Declarar a variável a com a multiplicação entre b e c.
+* Mostrar na tela a variável a.
 
 ```
-//Classe SomaArgs: Soma de valores 
+/Classe ProdutoABC
 /* IFPR - Campus Cascavel
 Disciplina: Programação Orientada à Objetos
 Professor: Nelson Bellincanta */ 
 
 import java.util.Scanner; //Importa a classe Scanner.
 
-public class SomaArgs { //Declara a classe SomaArgs.
+public class ProdutoABC {//Declaração da classe ProdutoABC
+    public static void main(String [] args){ //Inicialização do metódo main.
+        int c = 42; //Declaração da variável c
 
-  //Declara método main, que dá início ao programa.
-  public static void main(String[] args) {
+        Scanner dados= new Scanner(System.in); //Inicia a classe Scanner para entrada de dados
 
-    Scanner dados= new Scanner(System.in); //Inicia a classe Scanner para entrada de dados.
+        System.out.print("Informe um inteiro: "); //Impressão da imagem.
+        int b = dados.nextInt(); //Declaração da variável b.
+        dados.close(); //Fechando o objeto dados da classe Scanner
 
-    System.out.print("Insira o primeiro número: "); //Imprime a mensagem.
-    int arg1 = dados.nextInt(); //Declara e inicia a variável arg1.
-
-    System.out.print("Insira o segundo número: "); //Imprime a mensasgem.
-    int arg2 = dados.nextInt(); //Declara e inicia a variável arg2.
-
-    dados.close(); //Fecha o objeto dados da classe Scanner.
-
-    System.out.print("O resultado da soma é: "); //Imprime a mensagem.
-    System.out.println(arg1+arg2); //Imprime a soma de arg1 e arg2.
-  }//Fim do método main.
-} //Fim da classe SomaArgs.
+        int a = b*c;//Declaração de variável a que realiza a multiplicação entre b e c
+        System.out.println("Valor da variável c: " + c); //Impressão da variável c.
+        System.out.println("Valor da variável b: "+ b); //Impressão da variável b.
+        //Impressão do resultado como um programa de exemplo de folha de pagamento
+        System.out.println("Folha de pagamento: R$" +a +".00");//Impressão da variável a.
+    }//Fim do metódo main()
+}//Fim da classe ProdutoABC.
+```
