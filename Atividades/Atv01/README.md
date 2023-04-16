@@ -7,7 +7,7 @@ Objetivo: Criar uma classe em Java que seja capaz de apresentar a soma de todos 
 * Importar a classe Scanner da biblioteca java.util.
 * Usar o objeto dados que utiliza a classe Scanner para ler os dados.
 * Usar o metódo nextInt() da classe Scanner para ler as variáveis arg1 e arg2 como inteiros.
-* Fechar o objeto leitor com o metódo .close()
+* Fechar o objeto dados com o metódo .close()
 * Mostrar a soma de arg1 e arg2 com o metódo print()
 
 ```

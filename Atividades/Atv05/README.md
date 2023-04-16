@@ -8,8 +8,8 @@ Objetivo: Adicione a Atv04 (sem alterar as linhas existentes) o cálculo para a 
 * Declarar e inicializar gastosFeveriero do tipo double com os gastos do mês de fevereiro
 * Declarar e inicializar gastosMarco do tipo double com os gastos do mês de marco
 * Declarar e inicializar a variável gastosTrimestre do tipo double com a soma entre todas as variáveis de gastos.
-* Mostrar o resultado na tela arredondado para duas casas decimais com o metódo printf em que é passado como argumento a variável gastosTrimestre.
-* Declarar e inicializar a variável MediaMensal do tipo double com a variável gastosTrimestre dividido por 3 que é a quantidade de meses.
+* Mostrar o resultado na tela arredondado para duas casas decimais com o metódo printf, em que é passado como argumento a variável gastosTrimestre.
+* Declarar e inicializar a variável MediaMensal do tipo double com a variável gastosTrimestre dividido por 3 (quantidade de meses).
 * Mostrar o resultado na tela arredondado para duas casas decimais com o metódo printf em que é passado como argumento a variável MediaMensal.
 
 ```

@@ -8,8 +8,8 @@ Objetivo: Usando a classe JOptionPane para entrada de dados, crie uma classe que
 * Declarar strings para receber as entradas de dados.
 * Declarar floats para realizar a conta da média.
 * Usar o metódo .showInputDialog do JoptionPane nas strings para receber o input.
-* Inicializar os floats com o metódo parseFloat() que transforma string em float.
-* Usar o metódo .showMessageDialog do JOptionPane para mostrar o resultado da soma dos elementos divido por 2 ou média aritmétrica.
+* Inicializar os floats com o metódo parseFloat() que transformar string em float.
+* Usar o metódo .showMessageDialog do JOptionPane para mostrar o resultado da soma dos elementos divido por 2, ou seja, média aritmétrica.
 
 ```
 //Classe Media

@@ -7,13 +7,13 @@ Objetivo: Criar uma classe em Java que realize cada uma das seguintes tarefas:
 
 ## Para a resolução da atividade os seguintes passos foram realizados:
 
-* Importar a classe Scanner da biblioteca java.util.
+* Importar a classe Scanner da biblioteca java.util
 * Declarar a variável "c" como inteira e atribuir algum valor a ela.
 * Usar o objeto dados que utiliza a classe Scanner para ler o input.
 * Para mostrar a mensagem "Informe um inteiro" é usado o metódo print para ficar na mesma linha.
 * Usar o metódo nextInt() da classe Scanner para ler a variável "b" como inteira.
 * Fechar o objeto leitor com o metódo .close()
-* Declarar a variável a com a multiplicação entre b e c.
+* Declarar a variável "a" com a multiplicação entre b e c.
 * Mostrar na tela a variável a.
 
 ```

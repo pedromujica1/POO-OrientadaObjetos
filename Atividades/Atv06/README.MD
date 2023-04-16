@@ -6,9 +6,9 @@ Dados os valores de um depósito fixo mensal e um montante desejado, crie uma cl
 
 * Importar a classe Scanner da biblioteca java.util.
 * Definir como double a variável jurosMensais que recebe o dado do valor dos juros.
-* Usar o objeto dados que utiliza a classe Scanner para ler os dados.
+* Usar o objeto leituraScanner que utiliza a classe Scanner para ler os dados.
 * Usar o metódo nextDouble() da classe Scanner para ler as variáveis do montante e depositoFixo.
-* Fechar o objeto leitor com o metódo .close()
+* Fechar o objeto leituraScanner com o metódo .close()
 * Por meio da formúla do juros simples J  = C * i * t, calcular o J (valor do montante .subtraído pelo valor do deposito) e multiplicar a taxa de juros pelo valor do deposito.
 * Definir a variável juros como double, representando o valor do montante subtraído pelo valor do deposito.
 * Definir a variável capitalJuros, representando a multiplicação entre a taxa de juros e o valor do deposito.
