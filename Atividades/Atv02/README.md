@@ -6,7 +6,7 @@ Objetivo: Criar uma classe em Java que realize cada uma das seguintes tarefas:
 * Atribuir o produto de variáveis b e c para a variável a;
 * Utilizar um comentário para afirmar que um programa executa um cálculo de exemplo de folha de pagamento.
 
-Para a resolução da atividade os seguintes passos foram realizados.
+## Para a resolução da atividade os seguintes passos foram realizados:
 
 * Importar a classe Scanner da biblioteca java.util.
 * Declarar a variável "c" como inteira e atribuir algum valor a ela.

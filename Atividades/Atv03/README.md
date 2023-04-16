@@ -2,13 +2,15 @@
 
 # Atividade
 Objetivo: Usando a classe JOptionPane para entrada de dados, crie uma classe que receba a nota de duas provas e de um trabalho. Calcule e mostre a média.
-Para a resolução da atividade os seguintes passos foram realizados.
 
-* Importar a classe Scanner da biblioteca java.util.
-* Usar o objeto dados que utiliza a classe Scanner para ler os dados.
-* Usar o metódo nextInt() da classe Scanner para ler as variáveis arg1 e arg2 como inteiros.
-* Fechar o objeto leitor com o metódo .close()
-* Mostrar a soma de arg1 e arg2 com o metódo print()
+## Para a resolução da atividade os seguintes passos foram realizados:
+
+* Importar a classe JoptionPane.
+* Declarar strings para receber as entradas de dados.
+* Declarar floats para realizar a conta da média.
+* Usar o metódo .showInputDialog do JoptionPane nas strings para receber o input.
+* Inicializar os floats com o metódo parseFloat() que transforma string em float.
+* Usar o metódo .showMessageDialog do JOptionPane para mostrar o resultado da soma dos elementos divido por 2 ou média aritmétrica.
 
 ```
 //Classe Media
