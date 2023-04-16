@@ -1,9 +1,8 @@
-## Notebook Atividade 06 - Atv06
+# Notebook Atividade 06 - Atv06
 
-# Atividade
 Dados os valores de um depósito fixo mensal e um montante desejado, crie uma classe para determinar quantos meses serão necessários para acumular o montante desejado, considerando juros mensais de 0,5%.
 
-## Para a resolução da atividade os seguintes passos foram realizados:
+# Para a resolução da atividade os seguintes passos foram realizados:
 
 * Importar a classe Scanner da biblioteca java.util.
 * Definir como double a variável jurosMensais que recebe o dado do valor dos juros.
