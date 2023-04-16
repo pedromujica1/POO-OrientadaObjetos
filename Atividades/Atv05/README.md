@@ -3,11 +3,15 @@
 # Atividade
 Objetivo: Adicione a Atv04 (sem alterar as linhas existentes) o cálculo para a média mensal de gastos, criando uma variável mediaMensal junto com uma mensagem. Para isso, concatene a String com o valor, usando "Valor da média mensal = " + mediaMensal.
 
-* Importar a classe Scanner da biblioteca java.util.
-* Usar o objeto dados que utiliza a classe Scanner para ler os dados.
-* Usar o metódo nextInt() da classe Scanner para ler as variáveis arg1 e arg2 como inteiros.
-* Fechar o objeto leitor com o metódo .close()
-* Mostrar a soma de arg1 e arg2 com o metódo print()
+## Para a resolução da atividade os seguintes passos foram realizados:
+
+* Declarar e inicializar gastosJaneiro do tipo double com os gastos do mês de janeiro
+* Declarar e inicializar gastosFeveriero do tipo double com os gastos do mês de fevereiro
+* Declarar e inicializar gastosMarco do tipo double com os gastos do mês de marco
+* Declarar e inicializar a variável gastosTrimestre do tipo double com a soma entre todas as variáveis de gastos.
+* Mostrar o resultado na tela arredondado para duas casas decimais com o metódo printf em que é passado como argumento a variável gastosTrimestre.
+* Declarar e inicializar a variável MediaMensal do tipo double com a variável gastosTrimestre dividido por 3 que é a quantidade de meses.
+* Mostrar o resultado na tela arredondado para duas casas decimais com o metódo printf em que é passado como argumento a variável MediaMensal.
 
 ```
 //Classe BalancoTrimestral

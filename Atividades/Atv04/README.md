@@ -3,13 +3,20 @@
 # Atividade
 Objetivo: Atualmente os gastos mensais de uma empresa são detalhados em planilhas eletrônicas. Assim, para fechar o balanço do
 primeiro trimestre, é necessário somar o gasto total destas planilhas. Sabendo que, em janeiro, foram gastos R$ 30.000,00 reais, em fevereiro, R$ 33.030,77 reais e em março, R$ 23.899,01 reais, faça uma classe em Java que calcule e exiba o gasto total no trimestre, seguindo os seguintes passos:
-Para a resolução da atividade os seguintes passos foram realizados.
 
-* Importar a classe Scanner da biblioteca java.util.
-* Usar o objeto dados que utiliza a classe Scanner para ler os dados.
-* Usar o metódo nextInt() da classe Scanner para ler as variáveis arg1 e arg2 como inteiros.
-* Fechar o objeto leitor com o metódo .close()
-* Mostrar a soma de arg1 e arg2 com o metódo print()
+* Crie uma classe chamada BalancoTrimestral com o método main;
+* No método principal, declare uma variável do tipo real chamada gastosJaneiro e inicialize-a com o valor gasto no mês de janeiro;
+* Crie também as variáveis gastosFevereiro e gastosMarco, inicializando-as com os respectivos gastos, utilize uma linha para cada declaração;
+* Crie uma variável chamada gastosTrimestre e inicialize-a com a soma das outras variáveis
+* Exiba a variável gastosTrimestre.
+
+## Para a resolução da atividade os seguintes passos foram realizados:
+
+* Declarar e inicializar gastosJaneiro do tipo double com os gastos do mês de janeiro
+* Declarar e inicializar gastosFeveriero do tipo double com os gastos do mês de fevereiro
+* Declarar e inicializar gastosMarco do tipo double com os gastos do mês de marco
+* Declarar e inicializar a variável gastosTrimestre do tipo double com a soma entre todas as variáveis de gastos.
+* Mostrar o resultado na tela arredondado para duas casas decimais com o metódo printf em que é passado como argumento a variável gastosTrimestre.
 
 ```
 //Classe BalancoTrimestral
