@@ -37,5 +37,4 @@ public class SomaArgs { //Declara a classe SomaArgs.
     System.out.println(arg1+arg2); //Imprime a soma de arg1 e arg2.
   }//Fim do método main.
 } //Fim da classe SomaArgs.
-
 ```
