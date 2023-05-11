@@ -3,8 +3,6 @@
 Disciplina: Programação Orientada à Objetos
 Professor: Nelson Bellincanta */
 
-
-
 import java.util.Arrays;//Importa a biblioteca Arrays
 
 import java.util.Scanner; //Importa a classe Scanner.
@@ -71,10 +69,8 @@ public class Poltronas {//Início da classe Poltronas
         for(int i = 0; i<5; i++)
         {
             poltronas[i] = poltronasEconomicas[i];
+            System.out.print(Arrays.asList(poltronas));
         }
-
-        System.out.print(Arrays.asList(poltronas));
-        
 
         
     }//Fim do metódo main
