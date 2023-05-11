@@ -1,5 +1,3 @@
-package ex05;
-
 //Classe BalancoTrimestral
 /* IFPR - Campus Cascavel
 Disciplina: Programação Orientada à Objetos
