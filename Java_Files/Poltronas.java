@@ -7,6 +7,8 @@ import java.util.Arrays;//Importa a biblioteca Arrays
 
 import java.util.Scanner; //Importa a classe Scanner.
 
+
+
 public class Poltronas {//Início da classe Poltronas
     public static void main(String[]args){//Declaração e inicialização do metódo main
 
@@ -33,11 +35,13 @@ public class Poltronas {//Início da classe Poltronas
                 poltronas1[index1]=true;
                 index1++;
 
-                if (index1 == 6){
+                if (index1 == 5){
                     System.out.println("A Primeira classe está cheia");
                     break;
                 }
                 System.out.println(Arrays.asList(poltronas1));
+                System.out.println("Poltronas: "+Arrays.asList(poltronas1));
+                System.out.println("Poltrona escolhida: "+poltronas1[index1]);
             }
 
             if (input ==2) {
@@ -48,30 +52,19 @@ public class Poltronas {//Início da classe Poltronas
 
                 if (index2== 5){
                     System.out.println("A classe econômica está cheia");
-                    System.out.println("Deseja comprar uma poltrara na classe 1");
+                    System.out.println("Deseja comprar uma poltrara na classe 1?");
                     break;
                 }
                 System.out.print(Arrays.asList(poltronasEconomicas));
+                System.out.println("Poltronas: "+Arrays.asList(poltronasEconomicas));
+                System.out.println("Poltrona escolhida: "+poltronasEconomicas[index2]);
 
             }
-            
-
-
+           
         }
         dados.close();
-        Boolean poltronas[]=new Boolean[10];
-
-        for(int i = 0; i<5; i++)
-        {
-            poltronas[i] = poltronas1[i];
-        }
-
-        for(int i = 0; i<5; i++)
-        {
-            poltronas[i] = poltronasEconomicas[i];
-            System.out.print(Arrays.asList(poltronas));
-        }
-
+        
+    
         
     }//Fim do metódo main
 
