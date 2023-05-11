@@ -14,3 +14,4 @@
 * [Atividade 04](https://github.com/pedromujica1/POO-OrientadaObjetos/tree/main/Atividades/Atv04)
 * [Atividade 05](https://github.com/pedromujica1/POO-OrientadaObjetos/tree/main/Atividades/Atv05)
 * [Atividade 06](https://github.com/pedromujica1/POO-OrientadaObjetos/tree/main/Atividades/Atv06)
+* [Atividade 07](https://github.com/pedromujica1/POO-OrientadaObjetos/tree/main/Atividades/Atv07)
