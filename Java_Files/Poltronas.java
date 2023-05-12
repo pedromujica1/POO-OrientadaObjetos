@@ -8,7 +8,6 @@ import java.util.Arrays;//Importa a biblioteca Arrays
 import java.util.Scanner; //Importa a classe Scanner.
 
 
-
 public class Poltronas {//Início da classe Poltronas
     public static void main(String[]args){//Declaração e inicialização do metódo main
 
@@ -23,10 +22,10 @@ public class Poltronas {//Início da classe Poltronas
 
         Scanner novosAssentos= new Scanner(System.in);//Inicia a classe Scanner para entrada de outros dados.
         
-        boolean verificador = true;//
+        boolean verificador = true;//Variável para manter o while executando
 
-        int index1=0;
-        int index2=0;
+        int index1=0;//Variável para contar quantas vezes assentos primarios foram compradas
+        int index2=0;//Variável para contar quantas vezes assentos primarios foram comprados
 
         while (verificador){
             int poltransEco = 5;
@@ -40,8 +39,14 @@ public class Poltronas {//Início da classe Poltronas
 
             if (input ==1 && index1<5) {
 
-                poltronas1[index1]=true;
-                index1++;
+                System.out.println("Escolha uma poltrana da classe primária (1/5)"+ "\n"); //Mensagem de impressão do comando
+                int PoltronaInput = dados.nextInt(); //Declara e inicia a variável para receber o input do número de poltrona
+                if(PoltronaInput >5){//Início do if caso o usuário digite um número maior que 5
+                    System.out.println("Somente assentos entre 1 e 5.");//imprime mensagem
+                }//fim do if
+                
+                poltronas1[PoltronaInput-1]=true;//Define o elemento da array na posição do input com true
+                index1++;//
 
 
                  
@@ -77,7 +82,12 @@ public class Poltronas {//Início da classe Poltronas
             if (input ==2 && index2<5) {
 
             
-                poltronasEconomicas[index2]=true;
+                System.out.println("Escolha uma poltrana da classe econômica (6/10)"+ "\n");
+                int PoltronaInput = dados.nextInt(); //Declara e inicia a variável input
+                if(PoltronaInput >5){
+                    System.out.println("Somente assentos entre 1 e 5.");
+                }
+                poltronasEconomicas[PoltronaInput-1]=true;
                 index2++;
                 
                 System.arraycopy(poltronas1, 0, poltronasResultantes, 0, poltronas1.length);  
@@ -132,9 +142,9 @@ public class Poltronas {//Início da classe Poltronas
             
            
         }
-        dados.close();
-        respostaLotado.close();
-        novosAssentos.close();
+        dados.close();//Fechando objetos scanner
+        respostaLotado.close();//Fechando objeto scanner 
+        novosAssentos.close();//Fechando objeto scanner
         
     }//Fim do metódo main
 }//Fim da classe Poltronas
