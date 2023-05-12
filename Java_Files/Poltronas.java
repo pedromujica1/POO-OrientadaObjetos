@@ -70,6 +70,29 @@ public class Poltronas {//Início da classe Poltronas
                 String resposta1 = respostaLotado.nextLine();
                 System.out.println(resposta1);
 
+                if (resposta1.equals("s")){
+                    System.out.println("Gráfico de poltronas: "+Arrays.toString(poltronasResultantes)+"\n");
+                    
+
+                    System.out.println("Insira o número do assento da classe econômica que deseja ocupar? (6/10)" +"\n");
+                    int assentoClasse2 = novosAssentos.nextInt();
+
+                    for (int i = 0; i < poltronasResultantes.length;i++) {
+                        if (poltronasResultantes[assentoClasse2-1] == true){
+                            System.out.println("A poltrona "+assentoClasse2+ " já está comprada"+"\n");
+                            break;
+                        }
+                        else {
+                            poltronasResultantes[assentoClasse2-1]=true;
+                        }
+                        
+                    }
+                    System.out.println("Você comprou a poltrona "+assentoClasse2+ " na classe primária"+"\n");
+                    System.out.println("Gráfico de poltronas: "+Arrays.toString(poltronasResultantes)+"\n");
+                    break;
+
+                }
+
                 
                 if (resposta1.equals("n")){
                     System.out.println("O próximo voo parte em 3 horas.");
@@ -114,7 +137,7 @@ public class Poltronas {//Início da classe Poltronas
                     System.out.println("Gráfico de poltronas: "+Arrays.toString(poltronasResultantes)+"\n");
                     
 
-                    System.out.println("Insira o número do assento da classe econômica que deseja ocupar? (1/5)" +"\n");
+                    System.out.println("Insira o número do assento da classe primária que deseja ocupar? (1/5)" +"\n");
                     int assentoClasse1 = novosAssentos.nextInt();
 
                     for (int i = 0; i < poltronasResultantes.length;i++) {
