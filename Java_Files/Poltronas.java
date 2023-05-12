@@ -12,16 +12,18 @@ import java.util.Scanner; //Importa a classe Scanner.
 public class Poltronas {//Início da classe Poltronas
     public static void main(String[]args){//Declaração e inicialização do metódo main
 
-        boolean[] poltronas1 = {false,false,false,false,false};
+        boolean[] poltronas1 = {false,false,false,false,false};//declaração e inicialização da array com os assentos da classe primária
 
-        boolean[] poltronasEconomicas = {false,false,false,false,false};
+        boolean[] poltronasEconomicas = {false,false,false,false,false};//declaração e inicialização da array com os assentos da classe economica
 
         boolean[] poltronasResultantes = new boolean[10];  
 
         Scanner dados= new Scanner(System.in); //Inicia a classe Scanner para entrada de dados.
-        Scanner respostaLotado= new Scanner(System.in);
+        Scanner respostaLotado= new Scanner(System.in); //Inicia a classe Scanner para entrada de outros dados.
+
+        Scanner novosAssentos= new Scanner(System.in);//Inicia a classe Scanner para entrada de outros dados.
         
-        boolean verificador = true;
+        boolean verificador = true;//
 
         int index1=0;
         int index2=0;
@@ -99,42 +101,25 @@ public class Poltronas {//Início da classe Poltronas
 
                 if (resposta.equals("s")){
 
+                    System.out.println("Gráfico de poltronas: "+Arrays.toString(poltronasResultantes)+"\n");
                     
 
-                    System.out.println("Gráfico de poltronas: "+Arrays.toString(poltronasResultantes)+"\n");
-                    int pos=-1;
+                    System.out.println("Insira o número do assento da classe econômica que deseja ocupar? (1/5)" +"\n");
+                    int assentoClasse1 = novosAssentos.nextInt();
 
                     for (int i = 0; i < poltronasResultantes.length;i++) {
-
-                        System.out.println("Insira o número do assento da classe econômica que deseja ocupar? (0/5)" +"\n");
-                        int assentoClasse1 = respostaLotado.nextInt();
-                        if (poltronasResultantes[i] ==false){
-                            pos=i;
-                            int posVerdadeira=pos+1;
-
-                            System.out.println("\n"+"Assentos disponíveis: "  +posVerdadeira);
-                            if (assentoClasse1 != posVerdadeira) {
-                                System.out.println("Escolha outro assento!");
-                                break;
-
-                                
-                            }
-                            else{
-                                poltronasResultantes[pos]=true;
-                                System.out.println("Assento "+pos+" ocupado na classe Econômica."+"\n");
-
-                                System.out.println("Gráfico de poltronas: "+Arrays.toString(poltronasResultantes)+"\n");
-                                break;
-
-                            }
-
+                        if (poltronasResultantes[assentoClasse1-1] == true){
+                            System.out.println("A poltrona "+assentoClasse1+ " já está comprada"+"\n");
+                            break;
+                        }
+                        else {
+                            poltronasResultantes[assentoClasse1-1]=true;
                         }
                         
                     }
-
-
-
-
+                    System.out.println("Você comprou a poltrona "+assentoClasse1+ " na classe primária"+"\n");
+                    System.out.println("Gráfico de poltronas: "+Arrays.toString(poltronasResultantes)+"\n");
+                    break;
         
                 }
                 if (resposta.equals("n")){
@@ -149,6 +134,7 @@ public class Poltronas {//Início da classe Poltronas
         }
         dados.close();
         respostaLotado.close();
+        novosAssentos.close();
         
     }//Fim do metódo main
 }//Fim da classe Poltronas
