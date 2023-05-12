@@ -16,6 +16,8 @@ public class Poltronas {//Início da classe Poltronas
 
         boolean[] poltronasEconomicas = {false,false,false,false,false};
 
+        boolean[] poltronasResultantes = new boolean[10];  
+
         Scanner dados= new Scanner(System.in); //Inicia a classe Scanner para entrada de dados.
         Scanner respostaLotado= new Scanner(System.in);
         
@@ -40,9 +42,9 @@ public class Poltronas {//Início da classe Poltronas
                 index1++;
 
 
-                boolean[] result = new boolean[10];  //resultant array of size first array and second array  
-                System.arraycopy(poltronas1, 0, result, 0, poltronas1.length);  
-                System.arraycopy(poltronasEconomicas, 0, result, poltronas1.length,poltronasEconomicas.length);  
+                 
+                System.arraycopy(poltronas1, 0, poltronasResultantes, 0, poltronas1.length);  
+                System.arraycopy(poltronasEconomicas, 0, poltronasResultantes, poltronas1.length,poltronasEconomicas.length);  
                 
             
                 
@@ -51,7 +53,7 @@ public class Poltronas {//Início da classe Poltronas
 
                 System.out.println("Poltrona escolhida: "+index1+"\n");
 
-                System.out.println("Gráfico de poltronas: "+Arrays.toString(result));
+                System.out.println("Gráfico de poltronas: "+Arrays.toString(poltronasResultantes));
             }
 
 
@@ -76,19 +78,14 @@ public class Poltronas {//Início da classe Poltronas
                 poltronasEconomicas[index2]=true;
                 index2++;
                 
-
-                System.out.println(index2);
-
-
-                boolean[] result2 = new boolean[10];  //resultant array of size first array and second array  
-                System.arraycopy(poltronas1, 0, result2, 0, poltronas1.length);  
-                System.arraycopy(poltronasEconomicas, 0, result2, poltronas1.length,poltronasEconomicas.length);  
+                System.arraycopy(poltronas1, 0, poltronasResultantes, 0, poltronas1.length);  
+                System.arraycopy(poltronasEconomicas, 0, poltronasResultantes, poltronas1.length,poltronasEconomicas.length);  
                 
                 System.out.println("Você escolheu a classe econômica");
             
                 System.out.println("Poltrona escolhida: "+ (index2+poltransEco)+"\n");
 
-                System.out.println("Gráfico de poltronas: "+Arrays.toString(result2)+"\n");
+                System.out.println("Gráfico de poltronas: "+Arrays.toString(poltronasResultantes)+"\n");
 
                 poltransEco--;
 
@@ -101,13 +98,47 @@ public class Poltronas {//Início da classe Poltronas
                 
 
                 if (resposta.equals("s")){
-                    
+
                     
 
+                    System.out.println("Gráfico de poltronas: "+Arrays.toString(poltronasResultantes)+"\n");
+                    int pos=-1;
 
+                    for (int i = 0; i < poltronasResultantes.length;i++) {
+
+                        System.out.println("Insira o número do assento da classe econômica que deseja ocupar? (0/5)" +"\n");
+                        int assentoClasse1 = respostaLotado.nextInt();
+                        if (poltronasResultantes[i] ==false){
+                            pos=i;
+                            int posVerdadeira=pos+1;
+
+                            System.out.println("\n"+"Assentos disponíveis: "  +posVerdadeira);
+                            if (assentoClasse1 != posVerdadeira) {
+                                System.out.println("Escolha outro assento!");
+                                break;
+
+                                
+                            }
+                            else{
+                                poltronasResultantes[pos]=true;
+                                System.out.println("Assento "+pos+" ocupado na classe Econômica."+"\n");
+
+                                System.out.println("Gráfico de poltronas: "+Arrays.toString(poltronasResultantes)+"\n");
+                                break;
+
+                            }
+
+                        }
+                        
+                    }
+
+
+
+
+        
                 }
                 if (resposta.equals("n")){
-                    System.out.println("O próximo voo parte em 3 horas".);
+                    System.out.println("O próximo voo parte em 3 horas");
                     break;
                 }
                 
