@@ -15,13 +15,11 @@ public class Poltronas {//Início da classe Poltronas
 
         boolean[] poltronasEconomicas = {false,false,false,false,false};//declaração e inicialização da array com os assentos da classe economica
 
-        boolean[] poltronasResultantes = new boolean[10];  
+        boolean[] poltronasResultantes = new boolean[10];//Declaração e inicialização da array que vai receber a soma de poltronas1 e poltronasEconomicas  
 
         Scanner dados= new Scanner(System.in); //Inicia a classe Scanner para entrada de dados.
         Scanner respostaLotado= new Scanner(System.in); //Inicia a classe Scanner para entrada de outros dados.
 
-        
-        
         boolean verificador = true;//Variável para manter o while executando
 
         int index1=0;//Variável para contar quantas vezes assentos primarios foram compradas
@@ -59,7 +57,7 @@ public class Poltronas {//Início da classe Poltronas
                 String resposta1 = respostaLotado.nextLine();
                 
 
-                if (resposta1.equals("s")){
+                if (resposta1.equals("s") ){
                     
                     
                     for (int i = 0; i < poltronasResultantes.length;i++) {
@@ -67,7 +65,16 @@ public class Poltronas {//Início da classe Poltronas
                         
                         
                         if (poltronasResultantes[IndexRealClasse2] == false){
+                            System.out.println(IndexRealClasse2);
+
                             poltronasResultantes[IndexRealClasse2]=true;
+                            
+                            
+
+                            boolean[] result = Arrays.copyOfRange(poltronasResultantes, 5, 10);
+
+                            poltronasEconomicas=result;
+                            
 
 
                             System.out.println("Você comprou a poltrona "+(IndexRealClasse2+1)+ " na classe econômica"+"\n");
@@ -75,15 +82,12 @@ public class Poltronas {//Início da classe Poltronas
                             
                             index2++;
                             contAssentosEconomica--;
+                            
                             break;
                         }
 
                         else if(poltronasResultantes[IndexRealClasse2] == true)
                         {
-
-                            System.out.println("index2:"+index2);
-                            System.out.println("cont"+contAssentosEconomica);
-                            System.out.println("indexreal: "+IndexRealClasse2);
                             
                             System.out.println("A poltrona "+(IndexRealClasse2+1)+ " já está comprada"+"\n");
                             break;
@@ -92,6 +96,7 @@ public class Poltronas {//Início da classe Poltronas
                     }
 
                 }
+                
 
                 
                 if (resposta1.equals("n")){
@@ -160,9 +165,12 @@ public class Poltronas {//Início da classe Poltronas
                     break;
                 }
             }
+            
         }
         dados.close();//Fechando objetos scanner
         respostaLotado.close();//Fechando objeto scanner 
+        
+        
     
         
     }//Fim do metódo main
