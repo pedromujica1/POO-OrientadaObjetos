@@ -133,25 +133,24 @@ public class Poltronas {//Início da classe Poltronas
 
                 if (resposta.equals("s")){//Se a resposta for a string s que indica sim, o seguinte if é executado
 
-                    System.out.println("Gráfico de poltronas: "+Arrays.toString(poltronasResultantes)+"\n");
-                    
+                   
+                    if (poltronas1[index1] == false){//se a poltrona na classe primária na posição do index1 estiver desocupada 
+                        poltronas1[index1]=true;//Define a poltrona como ocupada, ou seja, define o elemento da array poltronas1 na posição do index1 como true
+                        poltronasResultantes[index1]=true;//Define o elemento da array poltronasResultantes na posição do index1 como true para que não haja divergência nos gráficos
+                        index1++;//incremento do index1 para que o sistema atribuia um novo assento ao usuário
 
-                    
-                    if (poltronas1[index1] == false){
-                        poltronas1[index1]=true;
-                        poltronasResultantes[index1]=true;
-                        index1++;
-
+                        //Imprime o número da poltrona comprada
                         System.out.println("Você comprou a poltrona "+(index1)+ " na classe primária"+"\n");
+                        //imprime o gráfico de poltronas atual.
                         System.out.println("Gráfico de poltronas: "+Arrays.toString(poltronasResultantes)+"\n");
                         
                     }
                         
                 }//Fim do if
 
-                if (resposta.equals("n")){
-                    System.out.println("O próximo voo parte em 3 horas");
-                    break;
+                if (resposta.equals("n")){//se a resposta for a string n que indica não, o seguinte bloco de código é executado
+                    System.out.println("O próximo voo parte em 3 horas");//Impressão da segunite mensagem
+                    break;//FInaliza o programa
                 }//fim do if
             }
             
