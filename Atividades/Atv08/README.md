@@ -55,6 +55,15 @@ poltronasResultantes[index1]=true;
 * Para que não haja divergência nos gráficos mostrados na tela caso o usuario compre um assento na classe economica após ter digitado 1 e depois comprar um assento digitando 2, é usado o metódo ArrayCopyof para copiar a array nova e definir a arrayPoltronasEconomicas com os valores atuais.
 * Exemplo da lógica no codigo:
 ```
+else if (input ==2 && index2>=5){
+    if (resposta1.equals("s") ){
+        if (poltronasResultantes[index1] == false){
+            poltronasResultantes[index1]=true;
+        }
+    }
+}
+```
+```
 else if (input == 1 && index1 >=5){
     if (resposta1.equals("s") ){
         if (poltronasResultantes[IndexRealClasse2] == false){
