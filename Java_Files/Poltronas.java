@@ -169,9 +169,5 @@ public class Poltronas {//Início da classe Poltronas
         }
         dados.close();//Fechando objetos scanner
         respostaLotado.close();//Fechando objeto scanner 
-        
-        
-    
-        
     }//Fim do metódo main
 }//Fim da classe Poltronas
