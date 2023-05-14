@@ -53,13 +53,18 @@ poltronasResultantes[index1]=true;
 ```
 * Se a resposta for "n", o programa é finalizada e a mensagem requisitada é imprimida
 * Para que não haja divergência nos gráficos mostrados na tela caso o usuario compre um assento na classe economica após ter digitado 1 e depois comprar um assento digitando 2, é usado o metódo ArrayCopyof para copiar a array nova e definir a arrayPoltronasEconomicas com os valores atuais.
+* Exemplo da lógica no codigo:
+```
+else if (input == 1 && index1 >=5){
+    if (resposta1.equals("s") ){
+        if (poltronasResultantes[IndexRealClasse2] == false){
+            poltronasResultantes[IndexRealClasse2]=true;
+        }
+    }
+}
+```
 
-
-
-
-
-
-
+# Código completo
 
 
 ```
