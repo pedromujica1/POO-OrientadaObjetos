@@ -20,6 +20,45 @@ O sistema deve exibir as seguintes alternativas:
 # Para a resolução da atividade os seguintes passos foram realizados:
 
 * Importar a classe Scanner.
+* Importar a classe Arrays
+* Definir 3 arrays:
+* 1 array para as poltronas da classe primária com todos os valores como false
+* 1 array para as poltronas da classe economica com todos os valores como false
+* 1 array resultante que vai receber a soma das outras 2 arrays.
+* Definir as variáveis index1 e index2 para ser a posição da poltrona modificada.No loop while adicionar o incremento ++ nessas variáveis para que a posição das poltronas mude a cada iteração do loop.
+* Utilizar loop while para executar o sistema
+* Mudar status da poltrona como ocupada pela linha de comando 
+```
+poltronas1[index1]=true;
+poltronasEconomicas[index2]=true;
+```
+* Usar metódo arraycopy para somar as Arrays poltronas1 e poltronasEconomicas
+* Se as variáveis index1 e index2 atingirem o valor 5, significa que as poltronas se esgotaram com isso um else if é imposto no código .
+```
+else if (input == 1 && index1 >=5){}
+else if (input ==2 && index2>=5){}
+```
+* O usuário é questionado se ele deseja comprar assentos na outra classe já que a classe escolhida por ele está lotada 
+* Se a resposta for "s", é verificado por um if se existe assento desocupado
+```
+//IndexReal2 é a soma de Index2 com a variável contAssentosEconomica(que é inicializada com o valor 5 e é subtraída por -1 á cada iteração do loop) 
+if (poltronasResultantes[IndexRealClasse2] == false){
+}
+if (poltronasResultantes[index1] == false){}
+```
+* Assim o elemento na posição do index da outra classe é definido como ocupado
+```
+poltronasResultantes[IndexRealClasse2]=true;
+poltronasResultantes[index1]=true;
+```
+* Se a resposta for "n", o programa é finalizada e a mensagem requisitada é imprimida
+* Para que não haja divergência nos gráficos mostrados na tela caso o usuario compre um assento na classe economica após ter digitado 1 e depois comprar um assento digitando 2, é usado o metódo ArrayCopyof para copiar a array nova e definir a arrayPoltronasEconomicas com os valores atuais.
+
+
+
+
+
+
 
 
 
