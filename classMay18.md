@@ -17,5 +17,9 @@ variável = new <Classe>([parâmetros]);
 ```
 # Visibilidade
 
-* Aspactos
+Aspectos da visibilidade podem ser:
+
+* public: Pode ser usado livremente pelas instâncias de classe
+* protected
+* private
 
