@@ -6,7 +6,8 @@
 
 * Objeto é criado a partir de classes.
 * Classe abstrata e classe concreta.
-* Classes abstratas são entidades não palpavéis
+* Classes abstratas:
+* Classes concretas: 
 # Classe de instância
 * Colocar um objeto dentro de um espaço de memória
 * O objeto é alocado quando começa com o comando new
