@@ -7,3 +7,6 @@
 * Objeto é criado a partir de classes.
 * Classe abstrata e classe concreta.
 * Classes abstratas são entidades não palpavéis
+
+
+anotçoes dessa aula
