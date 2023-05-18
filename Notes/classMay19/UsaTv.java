@@ -6,7 +6,7 @@ public class UsaTv {
         tv1.volume = 3;
         tv1.aumentarVolume();
         tv1.aumentarVolume();;
-        tv1.trocarCanal(10);
+        tv1.trocarCanal(1);
         tv1.mostrar();
     }
     
