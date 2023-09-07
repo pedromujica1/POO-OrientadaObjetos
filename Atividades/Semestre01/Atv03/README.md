@@ -11,7 +11,7 @@ Objetivo: Usando a classe JOptionPane para entrada de dados, crie uma classe que
 * Inicializar os floats com o metódo parseFloat() que transformar string em float.
 * Usar o metódo .showMessageDialog do JOptionPane para mostrar o resultado da soma dos elementos divido por 2, ou seja, média aritmétrica.
 
-```
+```java
 //Classe Media
 /* IFPR - Campus Cascavel
 Disciplina: Programação Orientada à Objetos
