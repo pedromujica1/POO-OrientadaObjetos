@@ -17,7 +17,7 @@ Objetivo: Criar uma classe em Java que realize cada uma das seguintes tarefas:
 * Mostrar na tela a variável a.
 
 ```java
-/Classe ProdutoABC
+//Classe ProdutoABC
 /* IFPR - Campus Cascavel
 Disciplina: Programação Orientada à Objetos
 Professor: Nelson Bellincanta */ 
