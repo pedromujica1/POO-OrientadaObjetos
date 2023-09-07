@@ -16,7 +16,7 @@ Dados os valores de um depósito fixo mensal e um montante desejado, crie uma cl
 * Mostrar na tela a variável totalMeses com o printf() e configurado com o %.0f para não mostrar nenhuma casa decimal.
 
 
-```
+```java
 //Classe Depositos
 /* IFPR - Campus Cascavel
 Disciplina: Programação Orientada à Objetos
