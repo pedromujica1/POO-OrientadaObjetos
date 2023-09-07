@@ -17,7 +17,7 @@ primeiro trimestre, é necessário somar o gasto total destas planilhas. Sabendo
 * Declarar e inicializar a variável gastosTrimestre do tipo double com a soma entre todas as variáveis de gastos.
 * Mostrar o resultado na tela arredondado para duas casas decimais com o metódo printf em que é passado como argumento a variável gastosTrimestre.
 
-```
+```java
 //Classe BalancoTrimestral
 /* IFPR - Campus Cascavel
 Disciplina: Programação Orientada à Objetos
