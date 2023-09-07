@@ -16,7 +16,7 @@ Objetivo: Criar uma classe em Java que realize cada uma das seguintes tarefas:
 * Declarar a variável "a" com a multiplicação entre b e c.
 * Mostrar na tela a variável a.
 
-```
+```java
 /Classe ProdutoABC
 /* IFPR - Campus Cascavel
 Disciplina: Programação Orientada à Objetos
