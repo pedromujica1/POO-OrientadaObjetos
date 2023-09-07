@@ -10,7 +10,7 @@ Objetivo: Criar uma classe em Java que seja capaz de apresentar a soma de todos 
 * Fechar o objeto dados com o metódo .close()
 * Mostrar a soma de arg1 e arg2 com o metódo print()
 
-```
+```java
 //Classe SomaArgs: Soma de valores 
 /* IFPR - Campus Cascavel
 Disciplina: Programação Orientada à Objetos
