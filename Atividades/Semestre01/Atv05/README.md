@@ -12,7 +12,7 @@ Objetivo: Adicione a Atv04 (sem alterar as linhas existentes) o cálculo para a 
 * Declarar e inicializar a variável MediaMensal do tipo double com a variável gastosTrimestre dividido por 3 (quantidade de meses).
 * Mostrar o resultado na tela arredondado para duas casas decimais com o metódo printf em que é passado como argumento a variável MediaMensal.
 
-```
+```java
 //Classe BalancoTrimestral
 /* IFPR - Campus Cascavel
 Disciplina: Programação Orientada à Objetos
