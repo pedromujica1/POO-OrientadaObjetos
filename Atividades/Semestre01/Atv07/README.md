@@ -17,7 +17,8 @@ Elabore uma classe que receba 5 notas de alunos por meio de showInputDialog, arm
 * Ao final exibir as respectivas Strings e dividir a variável sumNotas por 5.
 
 
-```//Classe NotasArray
+```java
+//Classe NotasArray
 /* IFPR - Campus Cascavel
 Disciplina: Programação Orientada à Objetos
 Professor: Nelson Bellincanta */ 
